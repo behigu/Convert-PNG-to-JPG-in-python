@@ -8,8 +8,12 @@ canvas1 = tk.Canvas(root, width=300, height = 250, bg='azure3', relief = 'raised
 canvas1.pack()
 
 label1 = tk.Label(root, text= 'File Conversion Tool', bg='azure3')
+label2 = tk.Label(root, text= 'Made By Behigu', bg='azure3')
+label2.config(font=('helvetica', 14))
 label1.config(font=('helvetica', 20))
+
 canvas1.create_window(150,60, window=label1)
+canvas1.create_window(150,24, window=label2)
 
 def getPNG():
     global iml
